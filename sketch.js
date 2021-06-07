@@ -219,6 +219,12 @@ if(gameState == 0 || gameState === undefined){
       if(mousePressedOver(startButton)){
         gameState0 = 1;
       }
+      
+      if(touches.length == 1){
+        if(touches[0].x<500 && touches[0].x>300 && touches[0].y<800 && touches[0].y>700){
+          gameState0 = 1;
+        }
+      }
     }
 
     if(gameState0 == 1){
