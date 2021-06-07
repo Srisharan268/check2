@@ -79,7 +79,7 @@ class Form{
 
     }
 
-    hostPressed(){
+   hostPressed(){
         textSize(30);
         fill("white");
         push();
@@ -88,9 +88,9 @@ class Form{
         pop();
         text('" '+randomCode+' "',590,300);
         
-        this.button2.position(785,500);
-        this.codeI.position(585,450);
-        this.nameI.position(585,400);
+        this.button2.position(this.pos+70,500);
+        this.codeI.position(this.pos-130,450);
+        this.nameI.position(this.pos-130,400);
         this.nameI.show();
         this.codeI.show();
         this.button2.show();
@@ -107,9 +107,9 @@ class Form{
     }
 
     joinPressed(){
-        this.button2.position(785,450);
-        this.codeI.position(585,400);
-        this.nameI.position(585,350);
+        this.button2.position(this.pos+70,450);
+        this.codeI.position(this.pos-130,400);
+        this.nameI.position(this.pos-130,350);
          
         this.nameI.show();
         this.button2.show();
